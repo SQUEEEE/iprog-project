@@ -1,3 +1,3 @@
-iprogProj.factory('iprogProj',function ($resource) {
+iprogProj.factory('iprogProj',function ($resource, $cookieStore) {
 	var hej = "hej"
 })

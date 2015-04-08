@@ -1,7 +1,6 @@
 .container{
 	width:100%;
 	min-height:100vh;
-	border-style:black;
 }
 
 #homeContainer{
@@ -14,6 +13,7 @@
 	background-color: #FFB6C1;
 	border-style:solid;
 	margin-bottom: 50px;
+	width: 100%;
 }
 
 

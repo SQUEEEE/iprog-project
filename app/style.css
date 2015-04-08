@@ -1,3 +1,14 @@
+.container{
+	width:100%;
+	min-height:100vh;
+	border-style:black;
+}
+
+#homeContainer{
+	background-image: url('background.jpg');
+	background-size:cover;
+}
+
 #header{
 	height:100px;
 	background-color: #FFB6C1;
@@ -5,8 +16,10 @@
 	margin-bottom: 50px;
 }
 
+
+
 #inlog{
-	height:200px;
+	height:250px;
 	background-color: #CA278C;
 	border-style:solid;
 	padding-left: 10%;

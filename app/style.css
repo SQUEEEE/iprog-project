@@ -1,0 +1,14 @@
+#header{
+	height:100px;
+	background-color: #FFB6C1;
+	border-style:solid;
+	margin-bottom: 50px;
+}
+
+#inlog{
+	height:200px;
+	background-color: #CA278C;
+	border-style:solid;
+	padding-left: 10%;
+	padding-top: 10px;
+}

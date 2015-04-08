@@ -7,6 +7,9 @@ iprogProj.config(['$routeProvider',
       when('/home', {
         templateUrl: 'partials/home.html'
       }).
+      when('/project', {
+        templateUrl: 'partials/projectView.html'
+      }).
       otherwise({
         redirectTo: '/home'
       });

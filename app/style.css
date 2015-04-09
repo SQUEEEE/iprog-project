@@ -1,6 +1,7 @@
 .container{
 	width:100vw;
 	min-height:100vh;
+	background-color: #4E4E4E;
 }
 
 #homeContainer{
@@ -29,15 +30,18 @@
 	margin: 50px;
 	min-height:300px;
 	border-style:solid;
+	background-color: white;
 }
 
 #arrowArea{
-	background-color: black;
 	height:100vh;
 	text-align: center;
 }
 
-#button{
+#arrowAreaButton{
 	margin-top:150px;
+}
 
+#button{
+	margin-top: 20px;
 }

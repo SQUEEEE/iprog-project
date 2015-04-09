@@ -8,7 +8,7 @@ iprogProj.config(['$routeProvider',
         templateUrl: 'partials/home.html'
       }).
       when('/project', {
-        templateUrl: 'partials/projectView.html'
+        templateUrl: 'partials/navigationView.html'
       }).
       otherwise({
         redirectTo: '/home'

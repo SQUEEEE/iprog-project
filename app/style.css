@@ -1,5 +1,5 @@
 .container{
-	width:100%;
+	width:100vw;
 	min-height:100vh;
 }
 
@@ -12,16 +12,32 @@
 	height:100px;
 	background-color: #FFB6C1;
 	border-style:solid;
-	margin-bottom: 50px;
-	width: 100%;
+	width: 100vw;
+	text-align: center;
 }
-
-
 
 #inlog{
 	height:250px;
+	margin-top: 50px;
 	background-color: #CA278C;
 	border-style:solid;
 	padding-left: 10%;
 	padding-top: 10px;
+}
+
+#boxArea{
+	margin-top: 50px;
+	min-height:300px;
+	border-style:solid;
+}
+
+#arrowArea{
+	background-color: black;
+	height:100vh;
+	text-align: center;
+}
+
+#button{
+	margin-top:150px;
+
 }

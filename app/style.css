@@ -27,7 +27,6 @@
 }
 
 #boxArea{
-	margin: 50px;
 	min-height:300px;
 	border-style:solid;
 	background-color: white;
@@ -44,4 +43,5 @@
 
 #button{
 	margin-top: 20px;
+	margin-bottom: 20px;
 }

@@ -26,7 +26,7 @@
 }
 
 #boxArea{
-	margin-top: 50px;
+	margin: 50px;
 	min-height:300px;
 	border-style:solid;
 }

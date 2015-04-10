@@ -1,7 +1,9 @@
 
 iprogProj.controller('iprogCtrl', function ($scope, iprogProj) {
 
-  $scope.number = iprogProj.getNumber();
+  //$scope.testVar = iprogProj.getVar();
+  $scope.testVar = 5;
 
+  console.log("hej")
 
 });

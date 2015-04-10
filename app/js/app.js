@@ -5,7 +5,8 @@ iprogProj.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/home', {
-        templateUrl: 'partials/home.html'
+        templateUrl: 'partials/home.html',
+        controller: 'iprogCtrl'
       }).
       when('/project', {
         templateUrl: 'partials/navigationView.html'

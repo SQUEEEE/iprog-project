@@ -1,10 +1,10 @@
 iprogProj.factory('iprogProj',function ($resource) { //this had $cookieStore as well, not working atm
-	this.val = 5;
+	
+	var val = 7;
 
 	this.getVal = function(){
-		return this.val()
+		return val
 	}
-
 
 	//super important don't forget
 	return this;

@@ -1,9 +1,8 @@
 
 iprogProj.controller('iprogCtrl', function ($scope, iprogProj) {
 
-  //$scope.testVar = iprogProj.getVar();
-  $scope.testVar = 5;
+  	$scope.testVar = iprogProj.getVal();
 
-  console.log("hej")
-
+  	//$scope.testAPI = iprogProj.testAPI()
+	
 });

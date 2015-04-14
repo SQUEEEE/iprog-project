@@ -1,12 +1,12 @@
 
 iprogProj.controller('iprogCtrl', function ($scope, iprogProj) {
 
-  	$scope.testVar = iprogProj.getVal();
+
   	$scope.status = "nothing done"
 
   	$scope.testAPI = function(){
   		
-  		console.log("in testAPI")
+  		//console.log("in testAPI")
 
   		$scope.status = "requesting..."
   		/*iprogProj.testAPI.get({}, function(data){

@@ -1,5 +1,8 @@
 iprogProj.controller('navigationCtrl', function ($scope, iprogProj) {
 
+	$scope.getProject = iprogProj.getProject();
+	
+
 	/* This did not work :(
 	$scope.boxView = function(){
 		var iprogProjVar = angular.module('iprogProj', ['ngRoute','ngResource']);

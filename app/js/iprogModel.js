@@ -1,5 +1,25 @@
 iprogProj.factory('iprogProj',function ($resource) { //this had $cookieStore as well, not working atm
     
+    var utdataHover = false;
+    var hoverText = ""
+
+    this.setUtdataHover = function(trueOrFalse,text){
+      if (trueOrFalse){
+        utdataHover = true;
+        hoverText = text;
+      }
+      else{
+        utdataHover = false;
+      }
+    }
+
+    this.getHoverText = function(){
+      return hoverText;
+    }
+
+    this.getUtdataHover = function(){
+      return utdataHover
+    }
     this.getProject = function(user, projectId){
         //gets project from api with user and id - https://api.ravelry.com/{user}/{projectId}.json
 

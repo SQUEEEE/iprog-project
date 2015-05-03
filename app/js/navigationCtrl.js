@@ -1,7 +1,25 @@
 iprogProj.controller('navigationCtrl', function ($scope, iprogProj) {
 
-	$scope.getProject = iprogProj.getProject();
-	
+	$scope.hoverText =  function(){
+		return iprogProj.getHoverText();
+	}
+
+	$scope.utdataHover = function(text){
+		if (iprogProj.getUtdataHover() && $scope.hoverText()==text){
+			return iprogProj.getUtdataHover(); 
+		}
+	}
+
+
+
+	$scope.hover = function(text){
+		console.log("in hover")
+		iprogProj.setUtdataHover(true, text);
+	}
+
+	$scope.leaveHover = function(){
+		iprogProj.setUtdataHover(false, "");
+	}
 
 	/* This did not work :(
 	$scope.boxView = function(){

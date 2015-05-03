@@ -37,11 +37,20 @@
 	text-align: center;
 }
 
+
+#hoverBox{
+	color: white;
+}
+
+
 #arrowAreaButton{
 	margin-top:150px;
 }
 
 #button{
 	margin-top: 20px;
+	
+}
+#buttonArea{
 	margin-bottom: 20px;
 }

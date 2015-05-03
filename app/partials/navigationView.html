@@ -2,22 +2,51 @@
 	<ng-include src="'partials/header.html'"></ng-include>
 	<div class='row'>
 		<div class='col-md-3' id='arrowArea'>
-			<button type='button' id='arrowAreaButton' class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-circle-arrow-left"></span></button>
+			<button type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
+				<span class="glyphicon glyphicon-circle-arrow-left"></span>
+			</button>
+			<div ng-if="utdataHover('Back to project')" class="animate-if" id="hoverBox">
+  				{{hoverText()}}
+			</div>
 		</div>
 		<div class='col-md-6'>
 			<div class='row'>
-				<center><button type='button' id='button' class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-circle-arrow-up"></span></button></center>
+				<div id='buttonArea'>
+					<center>
+						<button type='button' ng-mouseenter='hover("Up to pattern")' ng-mouseleave='leaveHover()' id='button' class="btn btn-default btn-lg"> 
+							<span class="glyphicon glyphicon-circle-arrow-up"></span>
+						</button>
+						<div ng-if="utdataHover('Up to pattern')" class="animate-if" id="hoverBox">
+  							{{hoverText()}}
+						</div>
+					</center>
+				</div>
 			</div>
 			<div class='row'>
 				<ng-include src="'partials/projectView.html'" ng-controller="projectCtrl"></ng-include> 	
 				<!-- This should include a function from the scope and change depending on which view we should show -->
 			</div>
 			<div class='row'>
-				<center><button type='button' id='button' class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-circle-arrow-down"></span></button></center>
+				<center>
+					<div id='buttonArea'>
+						<button type='button' ng-mouseenter='hover("Down to profile")' ng-mouseleave='leaveHover() 'id='button' class="btn btn-default btn-lg"> 
+							<span class="glyphicon glyphicon-circle-arrow-down"></span>
+						</button>
+						<div ng-if="utdataHover('Down to profile')" class="animate-if" id="hoverBox">
+  								{{hoverText()}}
+						</div>
+					</div>
+				</center>
 			</div>
 		</div>
 		<div class='col-md-3' id='arrowArea'>
-			<button type='button' id='arrowAreaButton' class="btn btn-default btn-lg"> <span class="glyphicon glyphicon-circle-arrow-right"></span></button>
+			<button type='button'ng-mouseenter='hover("More projects")' ng-mouseleave='leaveHover()'  id='arrowAreaButton'
+			class="btn btn-default btn-lg"> 
+				<span class="glyphicon glyphicon-circle-arrow-right"></span>
+			</button>
+			<div ng-if="utdataHover('More projects')" class="animate-if" id="hoverBox">
+  				{{hoverText()}}
+			</div>
 		</div>
 	</div>
 </div>

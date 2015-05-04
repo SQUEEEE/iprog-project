@@ -8,11 +8,6 @@ iprogProj.config(['$routeProvider',
         templateUrl: 'partials/home.html',
         controller: 'iprogCtrl'
       }).
-      when('/project/: typeOfView', {
-        templateUrl: 'partials/navigationView.html',
-        template: 'project',
-        controller: 'navigationCtrl'
-      }).
       when('/project', {
         templateUrl: 'partials/navigationView.html',
         controller: 'navigationCtrl'

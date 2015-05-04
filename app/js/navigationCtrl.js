@@ -1,6 +1,6 @@
 iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj) {
 
-	$scope.typeOfView = $routeParams.typeOfView;
+	/*$scope.typeOfView = $routeParams.typeOfView;*/
 
 	$scope.hoverText =  function(){
 		return iprogProj.getHoverText();

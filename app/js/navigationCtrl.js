@@ -1,4 +1,6 @@
-iprogProj.controller('navigationCtrl', function ($scope, iprogProj) {
+iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj) {
+
+	/*$scope.typeOfView = $routeParams.typeOfView;*/
 
 	$scope.hoverText =  function(){
 		return iprogProj.getHoverText();
@@ -9,8 +11,6 @@ iprogProj.controller('navigationCtrl', function ($scope, iprogProj) {
 			return iprogProj.getUtdataHover(); 
 		}
 	}
-
-
 
 	$scope.hover = function(text){
 		console.log("in hover")

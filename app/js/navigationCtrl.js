@@ -3,6 +3,7 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 	/*$scope.typeOfView = $routeParams.typeOfView;*/
 
 	$scope.getView = function(){
+		console.log("the view that is returned is" + iprogProj.getView());
 		return iprogProj.getView();
 	}
 

@@ -5,7 +5,15 @@ iprogProj.factory('iprogProj',function ($resource) { //this had $cookieStore as 
 
     var currentProject = exampleProject;
     var searchList = exampleSearch;
+    var view = 'project'
 
+    this.setView = function(text){
+      view = text;
+    }
+
+    this.getView = function(){
+      return view;
+    }
 
     this.setUtdataHover = function(trueOrFalse,text){
       if (trueOrFalse){

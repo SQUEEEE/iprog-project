@@ -2,6 +2,22 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 
 	/*$scope.typeOfView = $routeParams.typeOfView;*/
 
+	$scope.getView = function(){
+		return iprogProj.getView();
+	}
+
+	$scope.setView = function(text){
+		iprogProj.setView(text);
+		console.log(text)
+	}
+
+	$scope.clickLeftArrow = function(){
+		console.log("klickade åt vänster");
+	}
+
+	$scope.clickRightArrow = function(){
+		console.log("klickade åt höger");
+	}
 	$scope.hoverText =  function(){
 		return iprogProj.getHoverText();
 	}

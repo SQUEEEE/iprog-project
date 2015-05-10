@@ -1,17 +1,36 @@
-<div class='container' id='homeContainer'>
-	<ng-include src="'partials/header.html'"></ng-include>
-	<div class='row'>
-		<div class='col-md-4'></div>
-		<div class='col-md-4' id='inlog'>
-			<div class='row'>
-				<p>Log in here {{status}} </p>
 
-			</div>
-			<div class='row'>
-				<a href='#/project' class='btn btn-default btn-lg'>
-					Log in 
-				</a>
+	<div class='container' id='homeContainer'>
+		<ng-include src="'partials/header.html'"></ng-include>
+		<div class='row'>
+			<div class='col-md-4'></div>
+			<div class='col-md-4' id='inlog'>
+				<div class='row'>
+
+					<div>
+						<label>Namn</label>
+						<input type="text" id="userName" ng-model="userName"><br />
+
+						<label>Lösen</label>
+						<input type="text" id="userPass" ng-model="userPass">
+
+					</div>
+					<div>
+						<button class="btn btn-default" ng-click="saveUser()">
+							Login <span class="glyphicon glyphicon-ok"></span>
+						</button>
+					</div>
+
+					<div>
+						Namn : {{userName}} <br />
+						Lösen : {{userPass}}
+					</div>
+
+
+
+
+
+				</div>
+
 			</div>
 		</div>
 	</div>
-</div>

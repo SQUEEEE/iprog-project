@@ -16,6 +16,28 @@ iprogProj.controller('iprogCtrl', function ($scope, iprogProj) {
   		function(data){
 	  		$scope.status = "There was an error";
 		});*/
+
+                            
+
+
+
+          
+
   	
 	}
+                $scope.userName = "";
+                $scope.userPass = 0;
+
+                $scope.myData = new Firebase("https://intertwines.firebaseio.com/");
+
+                $scope.saveUser = function() {
+                  console.log("hej3")
+                  $scope.myData.push({userName:$scope.userName});
+                  $scope.userName = "";
+                  $scope.userPass = 0;
+                };
+
+                //$scope.myData.on('Value', function(snapshot) {
+                  //$scope.användare = snapshot.val();
+                //});
 });

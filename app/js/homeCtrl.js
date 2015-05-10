@@ -17,18 +17,14 @@ iprogProj.controller('iprogCtrl', function ($scope, iprogProj) {
 	  		$scope.status = "There was an error";
 		});*/
 
-                            
-
-
-
-          
+                          
 
   	
 	}
                 $scope.userName = "";
                 $scope.userPass = 0;
 
-                $scope.myData = new Firebase("https://intertwines.firebaseio.com/");
+                $scope.myData = new Firebase("https://testiprog.firebaseio.com/");
 
                 $scope.saveUser = function() {
                   console.log("hej3")

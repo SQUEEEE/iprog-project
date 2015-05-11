@@ -15,18 +15,12 @@
 
 					</div>
 					<div>
-						<button class="btn btn-default" ng-click="saveUser()">
-							Login <span class="glyphicon glyphicon-ok"></span>
-						</button>
+						<a href="#/project">
+							<button class="btn btn-default" ng-click="saveUser(); setView('project')" href="#/project" type="button">
+								Login <span class="glyphicon glyphicon-ok"></span>
+							</button>
+					</a>
 					</div>
-
-					<div>
-						Namn : {{userName}} <br />
-						Lösen : {{userPass}}
-					</div>
-
-
-
 
 
 				</div>

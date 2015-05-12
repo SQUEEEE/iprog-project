@@ -36,7 +36,6 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 	}
 
 	$scope.hover = function(text){
-		console.log("in hover")
 		iprogProj.setUtdataHover(true, text);
 	}
 

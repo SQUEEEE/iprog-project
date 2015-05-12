@@ -62,7 +62,7 @@
 
 
 		<!--If we are in patternview-->
-		<div ng-if="getView()=='pattern'">
+		<div ng-show="getView()=='pattern'">
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
 					<span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -149,13 +149,13 @@
 					</div>
 				</div>
 				<div class='row'>
-					<ng-include src="'partials/projectView.html'" ng-controller="projectCtrl"></ng-include> 	
+					<ng-include src="'partials/profileView.html'" ng-controller="profileCtrl"></ng-include> 	
 				</div>
 				<div class='row'>
 					<center>
 						<div id='buttonArea'>
 							<a href='#/profile'>
-								<button ng-click="setView('profile')" href='#/profile' type='button' ng-mouseenter='hover("Down to profile")' ng-mouseleave='leaveHover() 'id='button' class="btn btn-default btn-lg"> 
+								<button ng-click="setView('profile')" type='button' ng-mouseenter='hover("Down to profile")' ng-mouseleave='leaveHover() 'id='button' class="btn btn-default btn-lg"> 
 									<span class="glyphicon glyphicon-circle-arrow-down"></span>
 								</button>
 							</a>

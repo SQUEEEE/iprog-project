@@ -1,15 +1,15 @@
 iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj) {
 
 	/*$scope.typeOfView = $routeParams.typeOfView;*/
-
+/*
 	var init = function(){
-		if($routeParams.oneView){
-			$scope.setView(oneView);
+		if($routeParams.id){
+			$scope.setView(id);
 		}
 	}
+*/
 
 	$scope.getView = function(){
-		console.log("the view that is returned is" + iprogProj.getView());
 		return iprogProj.getView();
 	}
 
@@ -44,27 +44,8 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 		iprogProj.setUtdataHover(false, "");
 	}
 
-	/* This did not work :(
-	$scope.boxView = function(){
-		var iprogProjVar = angular.module('iprogProj', ['ngRoute','ngResource']);
-		var returnText = ""
-		iprogProjVar.config(['$routeProvider',
-		  function($routeProvider) {
-		    $routeProvider.
-		      when('/project', {
-		        returnText = 'partials/projectView.html'
-		      }).
-		      when('/designer', {
-		      	returnText = 'partials/designerView.html'
-		      })
-		      when('/profile', {
-		      	returnText = 'partials/profileView.html'
-		      })
-		  }]);
-		return returnText
-	}
 
-	*/
+
 
 
 

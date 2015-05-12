@@ -2,6 +2,12 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 
 	/*$scope.typeOfView = $routeParams.typeOfView;*/
 
+	var init = function(){
+		if($routeParams.oneView){
+			$scope.setView(oneView);
+		}
+	}
+
 	$scope.getView = function(){
 		console.log("the view that is returned is" + iprogProj.getView());
 		return iprogProj.getView();

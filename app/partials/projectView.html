@@ -2,8 +2,8 @@
 
 <div id='boxArea'>
 	<!--Should print out something nice by using the project, for now theres only text from the project -->
-	{{getProject}}
-	<div ng-repeat="photos as photo">
+	<!--{{getProject}}-->
+	<div ng-repeat="photo in photos">
 		<img src="{{photo.medium_url}}"></img>
 	</div>
 </div>

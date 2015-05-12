@@ -5,7 +5,6 @@
 
 		<!--If we are in projectview-->
 		<div ng-if="getView()=='project'">
-			<!-- Left arrow-->
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
 					<span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -15,7 +14,6 @@
 				</div>
 			</div>
 			<div class='col-md-6'>
-				<!-- Up arrow -->
 				<div class='row'>
 					<div id='buttonArea'>
 						<center>
@@ -33,11 +31,9 @@
 						</center>
 					</div>
 				</div>
-				<!-- Inkluderar view-->
 				<div class='row'>
 					<ng-include src="'partials/projectView.html'" ng-controller="projectCtrl"></ng-include> 	
 				</div>
-				<!-- Down arrow -->
 				<div class='row'>
 					<center>
 						<div id='buttonArea'>
@@ -53,7 +49,6 @@
 					</center>
 				</div>
 			</div>
-			<!-- Right arrow -->
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickRightArrow()" type='button'ng-mouseenter='hover("More projects")' ng-mouseleave='leaveHover()'  id='arrowAreaButton'
 				class="btn btn-default btn-lg"> 
@@ -66,9 +61,8 @@
 		</div>
 
 
-		<!--If we are in patternview but nothing happens :( :( -->
+		<!--If we are in patternview-->
 		<div ng-if="getView()=='pattern'">
-			<!-- Left arrow-->
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
 					<span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -78,18 +72,26 @@
 				</div>
 			</div>
 			<div class='col-md-6'>
-				<!-- Up arrow -->
 				<div class='row'>
 					<div id='buttonArea'>
-							<br>
-							<br>							
+						<center>
+							<a href='#/pattern'>
+								<button ng-click="setView('pattern')" type='button' ng-mouseenter='hover("Up to pattern")' ng-mouseleave='leaveHover()' id='button' class="btn btn-default btn-lg"> 
+									<span class="glyphicon glyphicon-circle-arrow-up"></span>
+								</button>
+							</a>
+							<div ng-if="utdataHover('Up to pattern')" class="animate-if" id="hoverBox">
+	  							{{hoverText()}}
+							</div>
+							<div ng-if="!utdataHover('Up to pattern')">
+								<br>							
+							</div>
+						</center>
 					</div>
 				</div>
-				<!-- Inkluderar view-->
 				<div class='row'>
-					<ng-include src="'partials/projectView.html'" ng-controller="projectCtrl"></ng-include> 	
+					<ng-include src="'partials/patternView.html'" ng-controller="projectCtrl"></ng-include> 	
 				</div>
-				<!-- Down arrow -->
 				<div class='row'>
 					<center>
 						<div id='buttonArea'>
@@ -105,7 +107,6 @@
 					</center>
 				</div>
 			</div>
-			<!-- Right arrow -->
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickRightArrow()" type='button'ng-mouseenter='hover("More projects")' ng-mouseleave='leaveHover()'  id='arrowAreaButton'
 				class="btn btn-default btn-lg"> 
@@ -116,10 +117,11 @@
 				</div>
 			</div>
 		</div>
+
+
 
 		<!--If we are in profileview-->
-		<div ng-if="getView()=='project'">
-			<!-- Left arrow-->
+		<div ng-if="getView()=='profile'">
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
 					<span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -129,7 +131,6 @@
 				</div>
 			</div>
 			<div class='col-md-6'>
-				<!-- Up arrow -->
 				<div class='row'>
 					<div id='buttonArea'>
 						<center>
@@ -147,11 +148,9 @@
 						</center>
 					</div>
 				</div>
-				<!-- Inkluderar view-->
 				<div class='row'>
 					<ng-include src="'partials/projectView.html'" ng-controller="projectCtrl"></ng-include> 	
 				</div>
-				<!-- Down arrow -->
 				<div class='row'>
 					<center>
 						<div id='buttonArea'>
@@ -167,7 +166,6 @@
 					</center>
 				</div>
 			</div>
-			<!-- Right arrow -->
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickRightArrow()" type='button'ng-mouseenter='hover("More projects")' ng-mouseleave='leaveHover()'  id='arrowAreaButton'
 				class="btn btn-default btn-lg"> 
@@ -178,6 +176,7 @@
 				</div>
 			</div>
 		</div>
+
 
 
 

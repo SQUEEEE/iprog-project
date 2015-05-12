@@ -15,6 +15,10 @@ iprogProj.config(['$routeProvider',
         templateUrl: 'partials/navigationView.html',
         controler: 'navigationCtrl'
       }).
+      when('/profile',{
+        templateUrl: 'partials/profileView.html',
+        controler: 'navigationCtrl'
+      }).
       otherwise({
         redirectTo: '/home'
       });

@@ -18,19 +18,16 @@ iprogProj.controller('iprogCtrl', function ($scope, iprogProj) {
 		});*/
 
                           
-
-  	
 	}
                 $scope.userName = "";
-                $scope.userPass = 0;
+                $scope.userPass = "";
 
                 $scope.myData = new Firebase("https://testiprog.firebaseio.com/");
 
                 $scope.saveUser = function() {
-                  console.log("hej3")
                   $scope.myData.push({userName:$scope.userName});
                   $scope.userName = "";
-                  $scope.userPass = 0;
+                  $scope.userPass = "";
                 };
 
                 //$scope.myData.on('Value', function(snapshot) {

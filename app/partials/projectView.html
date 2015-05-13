@@ -5,9 +5,11 @@
 		<div class='projectname'>
 			<div class='row'>
 				<div class='col-md-2'>
-					<a href="#" class="btn btn-info btn-lg">
-						<span class="glyphicon glyphicon-heart-empty"></span>
+					<a href="#" class="btn btn-default btn-lg">
+						<button class="glyphicon glyphicon-heart-empty" ng-click="saveChoice();" type="button"></button>
 					</a>
+
+
 				</div>
 				<div class='col-md-8'>
 					<h2>{{projname}}</h2><p> by {{userName}} </p>
@@ -22,4 +24,3 @@
 		<img src="{{photos[0].medium_url}}" alt='{{projname}}' width='300' height='300'> </img>
 	</center>
 </div>
-

@@ -62,18 +62,14 @@
 	width: 100%;
 }
 
-#titelName{
+
+.projectname h2{
+	min-height:5vh;
 	top:0px;
 	text-transform: uppercase;
 	padding: 10px;
 	font-family: Georgia, Serif;
 	font-size: 2em;
 	border-bottom: solid;
-
-=======
-.projectname{
-	min-height:5vh;
-	background-color: #C2C2D6;
 	text-align: center;
->>>>>>> bab136471c1b2b2a12d5ee40ce221367b7b7c293
 }

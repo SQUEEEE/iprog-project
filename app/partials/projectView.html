@@ -3,8 +3,15 @@
 <div id='boxArea'>
 	<!--Should print out something nice by using the project, for now theres only text from the project -->
 	<!--{{getProject}}-->
-	<div ng-repeat="photo in photos">
-		<img src="{{photo.medium_url}}"></img>
+	<div class='projectname'>
+		<h2>{{projname}}</h2>
+		<p class='text-right'> 
+			  <img src='{{userPic}}' class="img-thumbnail" alt="{{userName}}" width="50" height="50"> 
+		</p>
+
+	</div>
+	<div ng-repeat='photo in photos'>
+		<img src='{{photo.small_url}}'></img>
 	</div>
 </div>
 

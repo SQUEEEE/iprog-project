@@ -55,3 +55,8 @@
 	margin-bottom: 20px;
 }
 
+.projectname{
+	min-height:5vh;
+	background-color: #C2C2D6;
+	text-align: center;
+}

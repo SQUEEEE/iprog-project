@@ -1,4 +1,5 @@
 iprogProj.controller('projectCtrl', function ($scope, iprogProj) {
+
 	$scope.getProject = iprogProj.getProject();
 	$scope.photos = $scope.getProject.project.photos;
 
@@ -9,8 +10,12 @@ iprogProj.controller('projectCtrl', function ($scope, iprogProj) {
 	$scope.userPic = $scope.getUser.user.small_photo_url;
 
 
-                /*$scope.saveChoice = function() {
-                  $scope.myData.push({userName:$scope.userName});*/
-                  
+	$scope.myData = new Firebase("https://testiprog.firebaseio.com/");
 
-})
+    $scope.saveChoice = function() {
+    	$scope.myData.push({data:"klickat!"});
+
+    };
+
+
+});

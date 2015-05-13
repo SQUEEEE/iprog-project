@@ -55,7 +55,9 @@
 	margin-bottom: 20px;
 }
 
-
+.projectname{
+	border-bottom: solid;
+}
 .projectname h2{
 	min-height:5vh;
 	top:0px;
@@ -63,6 +65,9 @@
 	padding: 10px;
 	font-family: Georgia, Serif;
 	font-size: 2em;
-	border-bottom: solid;
 	text-align: center;
+}
+
+#miniPic{
+	margin: 0.8em;
 }

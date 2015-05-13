@@ -3,12 +3,19 @@
 <div id='boxArea'>
 	<center>
 		<div class='projectname'>
-			<h2>{{projname}}</h2>
-			<p class='text-right'> 
-				<img src='{{userPic}}' class="img-thumbnail" alt="{{userName}}" width="50" height="50"> 
-			</p>
-			<img src="{{photos[0].medium_url}}" alt='{{projname}}' width='300' height='300'> </img>
+			<div class='row'>
+				<div class='col-md-2'></div>
+				<div class='col-md-8'>
+					<h2>{{projname}}</h2>
+				</div>
+				<div class='col-md-2'>
+					<p id='miniPic'> 
+						<img src='{{userPic}}' class="img-thumbnail" alt="{{userName}}" width="50" height="50"></img> 
+					</p>
+				</div>
+			</div>
 		</div>
+		<img src="{{photos[0].medium_url}}" alt='{{projname}}' width='300' height='300'> </img>
 	</center>
 </div>
 

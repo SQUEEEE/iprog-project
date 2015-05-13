@@ -16,7 +16,7 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 
 	$scope.setView = function(text){
 		id = $routeParams.id
-		iprogProj.setView(id);
+		iprogProj.setView(text);
 		console.log(id)
 	}
 

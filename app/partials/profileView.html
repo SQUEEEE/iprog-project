@@ -1,10 +1,16 @@
 <!-- a users profile -->
 
-<div id='boxArea'>
-	<center>
-		<img src="{{picture}}"> </img>
-	</center>
-	{{getUser}}
 
-	
+<div id='boxArea'>
+	<div>
+		<img style="float: left; margin: 10px 0px 0px 10px; border: 5px solid black;" border="pixels" width="100" heigth="100" src="{{picture}}"> </img>
+		
+		<font size="48" style="margin: 10px"> {{username}} </font><br>
+
+		<font style="margin: 10px">{{first_name}}</font><br>
+		<font style="margin: 10px">{{location}}</font><br>
+
+	</div>
+
+	<br>{{about_me}}
 </div>

@@ -29,7 +29,7 @@
 #boxArea{
 	min-height:300px;
 	border-style:solid;
-	background-color: white;
+	background-color: #9a9a9a;
 }
 
 #arrowArea{
@@ -64,6 +64,9 @@
 #titelName{
 	top:0px;
 	text-transform: uppercase;
-	margin: 10px;
-	font-family: 
+	padding: 10px;
+	font-family: Georgia, Serif;
+	font-size: 2em;
+	border-bottom: solid;
+
 }

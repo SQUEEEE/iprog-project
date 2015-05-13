@@ -1,21 +1,15 @@
 var iprogProj = angular.module('iprogProj', ['ngRoute','ngResource']);
 
-iprogProj.config(['$routeProvider',
+var routeProvider = iprogProj.config(['$routeProvider',
   function($routeProvider) {
+
+    routeProvider = $routeProvider;
     $routeProvider.
       when('/home', {
         templateUrl: 'partials/home.html',
         controller: 'iprogCtrl'
       }).
-      when('/project', {
-        templateUrl: 'partials/navigationView.html',
-        controller: 'navigationCtrl'
-      }).
-      when('/pattern',{
-        templateUrl: 'partials/navigationView.html',
-        controller: 'navigationCtrl'
-      }).
-      when('/profile',{
+      when('/nav/:id', {
         templateUrl: 'partials/navigationView.html',
         controller: 'navigationCtrl'
       }).

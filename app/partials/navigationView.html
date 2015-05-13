@@ -4,7 +4,7 @@
 
 
 		<!--If we are in projectview-->
-		<div ng-if="getView()=='project'">
+		<div ng-if="getView()==':project'">
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
 					<span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -17,8 +17,8 @@
 				<div class='row'>
 					<div id='buttonArea'>
 						<center>
-							<a href='#/pattern'>
-								<button ng-click="setView('pattern')" type='button' ng-mouseenter='hover("Up to pattern")' ng-mouseleave='leaveHover()' id='button' class="btn btn-default btn-lg"> 
+							<a href='#/nav/:pattern'>
+								<button ng-click="setView(':pattern')" type='button' ng-mouseenter='hover("Up to pattern")' ng-mouseleave='leaveHover()' id='button' class="btn btn-default btn-lg"> 
 									<span class="glyphicon glyphicon-circle-arrow-up"></span>
 								</button>
 							</a>
@@ -37,8 +37,8 @@
 				<div class='row'>
 					<center>
 						<div id='buttonArea'>
-							<a href='#/profile'>
-								<button ng-click="setView('profile')" href='#/profile' type='button' ng-mouseenter='hover("Down to profile")' ng-mouseleave='leaveHover() 'id='button' class="btn btn-default btn-lg"> 
+							<a href='#/nav/:profile'>
+								<button ng-click="setView(':profile')" type='button' ng-mouseenter='hover("Down to profile")' ng-mouseleave='leaveHover() 'id='button' class="btn btn-default btn-lg"> 
 									<span class="glyphicon glyphicon-circle-arrow-down"></span>
 								</button>
 							</a>
@@ -62,7 +62,7 @@
 
 
 		<!--If we are in patternview-->
-		<div ng-show="getView()=='pattern'">
+		<div ng-show="getView()==':pattern'">
 			<div class='col-md-3' id='arrowArea'>
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
 					<span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -87,8 +87,8 @@
 					<center>
 						<!-- Down -->
 						<div id='buttonArea'>
-							<a href='#/project'>
-								<button ng-click="setView('project')" href='#/project' type='button' ng-mouseenter='hover("Down to project")' ng-mouseleave='leaveHover() 'id='button' class="btn btn-default btn-lg"> 
+							<a href='#/nav/:project'>
+								<button ng-click="setView(':project')" type='button' ng-mouseenter='hover("Down to project")' ng-mouseleave='leaveHover() 'id='button' class="btn btn-default btn-lg"> 
 									<span class="glyphicon glyphicon-circle-arrow-down"></span>
 								</button>
 							</a>
@@ -114,7 +114,7 @@
 
 
 		<!--If we are in profileview-->
-		<div ng-if="getView()=='profile'">
+		<div ng-if="getView()==':profile'">
 			<div class='col-md-3' id='arrowArea'>
 				<!-- Left -->
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
@@ -129,8 +129,8 @@
 					<!-- Up -->
 					<div id='buttonArea'>
 						<center>
-							<a href='#/project'>
-								<button ng-click="setView('project')" type='button' ng-mouseenter='hover("Up to project")' ng-mouseleave='leaveHover()' id='button' class="btn btn-default btn-lg"> 
+							<a href='#/nav/:project'>
+								<button ng-click="setView(':project')" type='button' ng-mouseenter='hover("Up to project")' ng-mouseleave='leaveHover()' id='button' class="btn btn-default btn-lg"> 
 									<span class="glyphicon glyphicon-circle-arrow-up"></span>
 								</button>
 							</a>

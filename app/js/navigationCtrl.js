@@ -8,14 +8,16 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 		}
 	}
 */
+	var id = $routeParams.id
 
 	$scope.getView = function(){
 		return iprogProj.getView();
 	}
 
 	$scope.setView = function(text){
+		id = $routeParams.id
 		iprogProj.setView(text);
-		console.log(text)
+		console.log(id)
 	}
 
 	$scope.clickLeftArrow = function(){
@@ -42,6 +44,9 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 	$scope.leaveHover = function(){
 		iprogProj.setUtdataHover(false, "");
 	}
+
+	$scope.setView(id)
+
 
 
 

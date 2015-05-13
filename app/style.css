@@ -55,6 +55,7 @@
 	margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 
 
 #image{
@@ -69,4 +70,10 @@
 	font-size: 2em;
 	border-bottom: solid;
 
+=======
+.projectname{
+	min-height:5vh;
+	background-color: #C2C2D6;
+	text-align: center;
+>>>>>>> bab136471c1b2b2a12d5ee40ce221367b7b7c293
 }

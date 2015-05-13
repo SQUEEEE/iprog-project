@@ -45,6 +45,9 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 		iprogProj.setUtdataHover(false, "");
 	}
 
+	$scope.setView(id)
+
+
 
 
 

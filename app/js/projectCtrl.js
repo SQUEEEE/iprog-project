@@ -8,4 +8,9 @@ iprogProj.controller('projectCtrl', function ($scope, iprogProj) {
 	$scope.userName = $scope.getUser.user.username;
 	$scope.userPic = $scope.getUser.user.small_photo_url;
 
+
+                $scope.saveChoice = function() {
+                  $scope.myData.push({userName:$scope.userName});
+                  
+
 })

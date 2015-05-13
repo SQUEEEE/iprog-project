@@ -4,14 +4,18 @@
 	<!--Should print out something nice by using the project, for now theres only text from the project -->
 	<!--{{getProject}}-->
 
-	<!-- I think it is good enough with only one picture!
+	<!-- I think it is good enough with only one picture
 	<div ng-repeat="photo in photos">
 		<img src="{{photo.medium_url}}"></img>
 	</div>
 	-->
 
 	<center>
-		<img src="{{photos[0].medium_url}}"> </img>
+		<div class=project>
+			<img src="{{photos[0].medium_url}}">
+				<h4>{{titel}}</h4>
+			</img>
+		</div>
 	</center>
 </div>
 

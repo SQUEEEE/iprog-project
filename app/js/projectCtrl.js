@@ -15,6 +15,7 @@ iprogProj.controller('projectCtrl', function ($scope, iprogProj) {
     $scope.saveChoice = function() {
     	$scope.myData.push({data:"klickat!"});
 
+
     };
 
 

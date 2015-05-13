@@ -58,7 +58,8 @@
 .projectname{
 	border-bottom: solid;
 }
-.projectname h2{
+
+h2{
 	min-height:5vh;
 	top:0px;
 	text-transform: uppercase;

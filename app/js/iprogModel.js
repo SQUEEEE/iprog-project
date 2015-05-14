@@ -84,7 +84,6 @@ iprogProj.factory('iprogProj',function ($resource, $http) { //this had $cookieSt
 
     this.getProject = function(user, projectId){
         //gets project from api with user and id - https://api.ravelry.com/{user}/{projectId}.json
-        console.log("getProject")
         
         return exampleProject
     }

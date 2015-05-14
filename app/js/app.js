@@ -9,7 +9,7 @@ var routeProvider = iprogProj.config(['$routeProvider',
         templateUrl: 'partials/home.html',
         controller: 'iprogCtrl'
       }).
-      when('/nav/:id', {
+      when('/nav/:type/:id', {
         templateUrl: 'partials/navigationView.html',
         controller: 'navigationCtrl'
       }).

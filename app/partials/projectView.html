@@ -9,10 +9,10 @@
 					ng-mouseenter='heartHover()' ng-mouseleave='leaveHeartHover()'>
 						<div class="glyphicon glyphicon-heart-empty" ng-click="saveChoice()"></div>
 					</button>
-					<div ng-if="utdataHeartHover" class="animate-if" id="hoverBox">
+					<div ng-if="utdataHeartHover()" class="animate-if" id="hoverBox">
 	  					{{heartHoverText}}
 					</div>
-					<div ng-if="!utdataHover">
+					<div ng-if="!utdataHeartHover">
 						<br>							
 					</div>
 

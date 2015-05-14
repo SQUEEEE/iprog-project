@@ -7,6 +7,8 @@ iprogProj.factory('iprogProj',function ($resource) { //this had $cookieStore as 
     var searchList = exampleSearch;
     var view = ':project'
 
+    var utdataHeart = false;
+
     this.setView = function(text){
       view = text;
     }
@@ -32,6 +34,16 @@ iprogProj.factory('iprogProj',function ($resource) { //this had $cookieStore as 
     this.getUtdataHover = function(){
       return utdataHover
     }
+
+    // for the like button we got heart-functions
+    this.getHeartHover = function(){
+      return utdataHeart
+    }
+
+    this.setHeartHover = function(trueOrFalse){
+      utdataHeart = trueOrFalse;
+    }
+
     this.getProject = function(user, projectId){
         //gets project from api with user and id - https://api.ravelry.com/{user}/{projectId}.json
 

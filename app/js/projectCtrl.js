@@ -14,21 +14,17 @@ iprogProj.controller('projectCtrl', function ($scope, iprogProj) {
     	$scope.myData.push({data:"klickat!"});
     };
 
-    $scope.hoverText =  function(){
-		return iprogProj.getHoverText();
-	}
+    $scope.heartHoverText = 'Like'
 
-	$scope.utdataHover = function(text){
-		if (iprogProj.getUtdataHover() && $scope.hoverText()==text){
-			return iprogProj.getHeartHover(); 
-		}
+	$scope.utdataHeartHover = function(){
+		return iprogProj.getHeartHover();
 	}
 
 	$scope.heartHover = function(){
 		iprogProj.setHeartHover(true);
 	}
 
-	$scope.leaveHover = function(){
+	$scope.leaveHeartHover = function(){
 		iprogProj.setHeartHover(false);
 	}
 

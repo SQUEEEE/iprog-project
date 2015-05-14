@@ -5,6 +5,7 @@
 		<div class='projectname'>
 			<div class='row'>
 				<div class='col-md-2'>
+					<!-- The like button -->
 					<button ng-model="bob" class="btn btn-default btn-lg" id='miniPic' 
 					ng-mouseenter='heartHover()' ng-mouseleave='leaveHeartHover()'>
 						<div class="glyphicon glyphicon-heart-empty" ng-click="saveChoice()"></div>
@@ -18,16 +19,19 @@
 
 
 				</div>
+				<!-- Info about the project -->
 				<div class='col-md-8'>
 					<h2>{{projname}}</h2><p> by {{userName}} </p>
 				</div>
 				<div class='col-md-2'>
+					<!-- The mini picture of the maker -->
 					<p id='miniPic'> 
 						<img src='{{userPic}}' class="img-thumbnail" alt="{{userName}}" width="50" height="50"></img> 
 					</p>
 				</div>
 			</div>
 		</div>
+		<!-- The project picture -->
 		<img src="{{photos[0].medium_url}}" alt='{{projname}}' width='300' height='300'> </img>
 	</center>
 </div>

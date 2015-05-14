@@ -1,4 +1,4 @@
-iprogProj.factory('iprogProj',function ($resource) { //this had $cookieStore as well, not working atm
+iprogProj.factory('iprogProj',function ($resource, $http) { //this had $cookieStore as well, not working atm
     
     var utdataHover = false;
     var hoverText = ""
@@ -8,6 +8,44 @@ iprogProj.factory('iprogProj',function ($resource) { //this had $cookieStore as 
     var view = ':project'
 
     var utdataHeart = false;
+
+   /* this.testAPI = $resource('https://api.ravelry.com/current_user.json', {}, {
+        get: {
+            method: 'GET',
+            headers: { 
+                'Authorization': 'Basic RjlFOTc5ODBFMDc3MTA2Mjc3N0M6Rm9BeFVTekNFR2daS2dLTWxmZi04a0NWTnNqSFNRT1oxZGR3UlJxYw==',
+                'Access-Control-Allow-Origin': 'http://localhost:3000',
+            }
+        }
+    });*/
+
+   /* var config = {headers: {
+        'Authorization': 'Basic RjlFOTc5ODBFMDc3MTA2Mjc3N0M6Rm9BeFVTekNFR2daS2dLTWxmZi04a0NWTnNqSFNRT1oxZGR3UlJxYw==',
+        'Access-Control-Allow-Origin': 'http://localhost:3000',
+        'Accept': 'application/json'
+      }
+   };*/
+
+   /* this.testAPI = function(){
+     /* $http.get('https://api.ravelry.com/current_user.json', config).success(console.log("success")).error(console.log("error"));
+      
+
+      var apitest = $resource('https://api.ravelry.com/:req', {}, {
+        get: {
+          method: 'GET',
+          headers: {
+            'Authorization': 'Basic RjlFOTc5ODBFMDc3MTA2Mjc3N0M6Rm9BeFVTekNFR2daS2dLTWxmZi04a0NWTnNqSFNRT1oxZGR3UlJxYw=='
+          }
+        }
+      })
+      
+      var testobj = apitest.get({req:'current_user.json'}, function(data){
+        console.log(data)
+      }) 
+
+      //$http.get('https://api.ravelry.com/current_user.json', {headers: {'Authorization': 'Basic RjlFOTc5ODBFMDc3MTA2Mjc3N0M6Rm9BeFVTekNFR2daS2dLTWxmZi04a0NWTnNqSFNRT1oxZGR3UlJxYw=='}})
+   }*/
+
 
     this.setView = function(text){
       view = text;
@@ -46,13 +84,13 @@ iprogProj.factory('iprogProj',function ($resource) { //this had $cookieStore as 
 
     this.getProject = function(user, projectId){
         //gets project from api with user and id - https://api.ravelry.com/{user}/{projectId}.json
-
+        console.log("getProject")
+        
         return exampleProject
     }
 
     this.getUser = function(userId){
         //gets user profile from api with user id - https://api.ravelry.com/people/{userId}.json
-
         return exampleUser
     }
 

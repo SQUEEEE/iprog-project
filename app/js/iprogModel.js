@@ -80,6 +80,13 @@ iprogProj.factory('iprogProj',function ($resource, $http) { //this had $cookieSt
       utdataHeart = trueOrFalse;
     }
 
+    /*this.getCurrentPattern = function(){
+      return currentPattern;
+    }
+    this.getCurrentProject = function(){
+      return currentProject;
+    }*/
+
     this.getProject = function(user, projectId){
         //gets project from api with user and id - https://api.ravelry.com/{user}/{projectId}.json
         
@@ -9032,8 +9039,11 @@ iprogProj.factory('iprogProj',function ($resource, $http) { //this had $cookieSt
 }
 
 
-  var currentProject = exampleProject;
-  var currentPattern = exampleProject.project.pattern_name
+  this.currentProject = exampleProject.project.name;
+  this.currentPattern = exampleProject.project.pattern_name
+  this.currentProfile = exampleProject.project.user.username
+
+  this.userProjects = exampleUserProjects
   var searchList = exampleSearch;
 
 

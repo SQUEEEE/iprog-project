@@ -3,6 +3,16 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 	var id = $routeParams.id
 	$scope.type = $routeParams.type
 	
+	//binding for navigation purposes
+	$scope.currentPattern = iprogProj.currentPattern
+	$scope.currentProject = iprogProj.currentProject
+	$scope.currentProfile = iprogProj.currentProfile
+
+	var userProjects = iprogProj.userProjects
+
+	$scope.getNextUserProject = function(){
+		return userProjects.projects[0].permalink
+	}
 
 	/*$scope.getView = function(){
 		return iprogProj.getView();

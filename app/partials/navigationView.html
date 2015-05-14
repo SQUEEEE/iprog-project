@@ -4,7 +4,7 @@
 
 
 		<!--If we are in projectview-->
-		<div ng-if="getView()=='project'">
+		<div ng-if="type=='project'">
 			<div class='col-md-3' id='arrowArea' align='right'>
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
 					<span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -62,7 +62,7 @@
 
 
 		<!--If we are in patternview-->
-		<div ng-show="getView()=='pattern'">
+		<div ng-show="type=='pattern'">
 			<div class='col-md-3' id='arrowArea' align='right'>
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 
 					<span class="glyphicon glyphicon-circle-arrow-left"></span>
@@ -114,7 +114,7 @@
 
 
 		<!--If we are in profileview-->
-		<div ng-if="getView()=='profile'">
+		<div ng-if="type=='profile'">
 			<div class='col-md-3' id='arrowArea' align='right'>
 				<!-- Left -->
 				<button ng-click="clickLeftArrow()" type='button' ng-mouseenter='hover("Back to project")' ng-mouseleave='leaveHover()' id='arrowAreaButton' class="btn btn-default btn-lg"> 

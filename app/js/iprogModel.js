@@ -3,9 +3,7 @@ iprogProj.factory('iprogProj',function ($resource, $http) { //this had $cookieSt
     var utdataHover = false;
     var hoverText = ""
 
-    var currentProject = exampleProject;
-    var searchList = exampleSearch;
-    var view = ':project'
+    var view = 'project'
 
     var utdataHeart = false;
 
@@ -9032,6 +9030,11 @@ iprogProj.factory('iprogProj',function ($resource, $http) { //this had $cookieSt
   ],
   "paginator": null
 }
+
+
+  var currentProject = exampleProject;
+  var currentPattern = exampleProject.project.pattern_name
+  var searchList = exampleSearch;
 
 
     //super important don't forget

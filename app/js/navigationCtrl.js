@@ -1,16 +1,17 @@
 iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj) {
 
 	var id = $routeParams.id
-	var type = $routeParams.type
+	$scope.type = $routeParams.type
+	
 
-	$scope.getView = function(){
+	/*$scope.getView = function(){
 		return iprogProj.getView();
 	}
 
 	$scope.setView = function(text){
 		iprogProj.setView(text);
 		
-	}
+	}*/
 
 	$scope.clickLeftArrow = function(){
 		console.log("klickade åt vänster");
@@ -38,6 +39,6 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 	}
 
 	//setting the type so the view knows what to show
-	$scope.setView(type)
+	//$scope.setView($routeParams.type)
 
 })

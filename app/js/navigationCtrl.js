@@ -1,13 +1,5 @@
 iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj) {
 
-	/*$scope.typeOfView = $routeParams.typeOfView;*/
-/*
-	var init = function(){
-		if($routeParams.id){
-			$scope.setView(id);
-		}
-	}
-*/
 	var id = $routeParams.id
 
 	$scope.getView = function(){
@@ -46,11 +38,5 @@ iprogProj.controller('navigationCtrl', function ($scope, $routeParams, iprogProj
 	}
 
 	$scope.setView(id)
-
-
-
-
-
-
 
 })

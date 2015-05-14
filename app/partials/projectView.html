@@ -5,9 +5,16 @@
 		<div class='projectname'>
 			<div class='row'>
 				<div class='col-md-2'>
-					<button ng-model="bob" class="btn btn-default btn-lg" id='miniPic'>
+					<button ng-model="bob" class="btn btn-default btn-lg" id='miniPic' 
+					ng-mouseenter='heartHover()' ng-mouseleave='leaveHeartHover()'>
 						<div class="glyphicon glyphicon-heart-empty" ng-click="saveChoice()"></div>
 					</button>
+					<div ng-if="utdataHeartHover" class="animate-if" id="hoverBox">
+	  					{{heartHoverText}}
+					</div>
+					<div ng-if="!utdataHover">
+						<br>							
+					</div>
 
 
 				</div>
